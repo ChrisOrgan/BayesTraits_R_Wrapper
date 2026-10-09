@@ -1,0 +1,25 @@
+#NEXUS
+[R-package APE, Sat Sep  5 14:12:31 2026]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 5;
+	TAXLABELS
+		a
+		b
+		c
+		d
+		e
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	a,
+		2	b,
+		3	c,
+		4	d,
+		5	e
+	;
+	TREE * 1 = [&R] ((1:1,2:1):2,(3:2,(4:1,5:1):1):1);
+	TREE * 2 = [&R] ((1:1,2:1):1,(3:3,(4:1,5:1):2):1);
+	TREE * 3 = [&R] ((1:1,2:2):1,(3:2,(4:1,5:1):5):1);
+END;
